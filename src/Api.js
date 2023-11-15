@@ -6,7 +6,7 @@ export const Api = async ()=>{
     return product.data;
 }
 
-export const recomm = async (api)=>{
+export const recom5 = async (api)=>{
     const product = await axios.get(`https://fakestoreapi.com/products${api}`)
     return product.data;
 }
