@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
 import Cart from './pages/cart';
+import Tambah from './pages/Tambah';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path:'/cart',
     element:<Cart/>
+  },
+  {
+    path:'/Tambah',
+    element:<Tambah/>
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
