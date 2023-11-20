@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { addData } from '../Api'
+
 import Navbar from '../element/navbar'
 
 
@@ -17,9 +17,9 @@ function Tambah() {
 
 
 
-    useEffect(()=>{
-        addData().then((respon)=>respon)
-    },[])
+    // useEffect(()=>{
+    //     addData().then((respon)=>respon)
+    // },[])
 
 
     const tambahdata=(e)=>{

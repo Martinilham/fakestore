@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Api, addData } from '../Api'
+import { Api } from '../Api'
 import Navbar from '../element/navbar'
 
 function Home() {
@@ -9,14 +9,7 @@ function Home() {
         Api().then((respon)=>setProduct(respon))
     },[])
 
-    const [tambahdata,setdata] = useState([])
-
-    useEffect(()=>{
-        addData().then((respon)=>setdata([respon]))
-    },[])
-
     console.log(product)
-    console.log(tambahdata)
   return (
     <>
     <Navbar/>
@@ -34,7 +27,7 @@ function Home() {
                 </div>
             </div>
         ))}
-        {tambahdata.map((q)=>(
+        {/* {tambahdata.map((q)=>(
             <div className='col-2'>
             <div className='row mb-5'>
             <div className="card col-12" style={{width: '18rem'}}>
@@ -46,7 +39,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        ))}
+        ))} */}
     </div>
     </>
   )

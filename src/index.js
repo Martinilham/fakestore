@@ -6,6 +6,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
 import Cart from './pages/cart';
 import Tambah from './pages/Tambah';
+import Login from './pages/login';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path:'/Tambah',
     element:<Tambah/>
+  },
+  {
+    path:'/login',
+    element:<Login/>
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
