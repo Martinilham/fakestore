@@ -11,15 +11,15 @@ export const recom5 = async (api)=>{
     return product.data;
 }
 
-export const addData = async ()=>{
-    const TambahData = await axios.post('https://fakestoreapi.com/products',{
-                    title: '',
-                    price: '',
-                    description: '',
-                    image: '',
-                    category: ''
-    })
-    return TambahData.data;
+// export const addData = async ()=>{
+//     const TambahData = await axios.post('https://fakestoreapi.com/products',{
+//                     title: '',
+//                     price: '',
+//                     description: '',
+//                     image: '',
+//                     category: ''
+//     })
+//     return TambahData.data;
 
 
-}
+// }
